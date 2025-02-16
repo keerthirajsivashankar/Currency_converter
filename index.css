@@ -1,0 +1,96 @@
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 5%;
+  background: black;
+  background-image: url('current.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(80%); /* Adds grayscale filter to the background */
+}
+
+/* Glassmorphism Effect */
+.converter-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 400px;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Title Styling */
+.head h1 {
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Input Section */
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* Labels */
+label {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Dropdown & Inputs */
+select, input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+input:disabled {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Button Styling */
+.button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  background: linear-gradient(45deg, #1e3c72, #2a5298);
+  color: white;
+}
+
+.button:hover {
+  background: linear-gradient(45deg, #2a5298, #1e3c72);
+  transform: scale(1.05);
+}
